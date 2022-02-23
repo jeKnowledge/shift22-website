@@ -1,0 +1,292 @@
+body{
+  background-image: url("../images/fundo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+}
+
+.past, .partners{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.memories{
+  overflow: hidden;
+  width: 100vw;
+  margin-top: 10%;
+}
+
+.partners{
+  margin-top: 20vh;
+}
+
+.past h1, .partners h1, .memories h1{
+  font-size: 3rem;
+  margin: 5% auto;
+}
+.year{
+  display: flex;
+  align-items: center;
+  width:55%;
+  justify-content: center;
+
+}
+
+.year a{
+  /*background: linear-gradient(90deg, #7F45F9 0%, #2131C3 100%);*/
+  border: 2px solid #DFC6FF;
+  /*box-sizing: border-box;*/
+  border-radius: 10px;
+  /*text-align: right;*/
+  line-height: 300%;
+  padding: 0vh 5vw;
+  margin: 2%;
+}
+
+.button{
+  background: linear-gradient(90deg, #7F45F9 , #2131C3 , #AB00E7 , #FFB26A );
+  transition: 0.5s background-position;
+  background-size: 300%;
+  background-position: left;
+}
+
+.button:hover{
+  cursor: pointer;
+  background-position: right;
+}
+/*
+.year a:hover{
+  background-color: #964DF2;
+  box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}
+.year a:active{
+  background-color: #9665D6;
+  box-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}*/
+
+#content-gallery{
+  /*width: 45vw;
+  /*position: relative;*/
+  /*margin-top: 10%;*/
+  /*margin: 0 auto;*/
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+.rect {
+  height: 4px;
+  width: 30px;
+  display: inline-block;
+  box-shadow: 0px 0px 18px #7D6AE4;transition: 0.6s;
+}
+
+
+.images{
+  position: relative;
+  z-index: 2;
+  left:10%;
+  transition: 2s;
+  width: 80%;
+  display: none;
+}
+
+.images img{
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #DFC6FF;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#controls{
+  display: flex;
+  /*justify-content: space-between;*/
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+  margin-top: 5%;
+  /*padding-top: 20%;
+  position: absolute;*/
+}
+
+.prev,
+.next {
+  /*background: linear-gradient(90deg, #7F45F9 0%, #2131C3 100%);*/
+  border: 2px solid #DFC6FF;
+  /*box-sizing: border-box;*/
+  border-radius: 10px;
+  /*text-align: right;*/
+  line-height: 300%;
+  padding: 0vh 5vw;
+  margin: 2%;
+}
+/*.prev:hover,
+.next:hover{
+  cursor: pointer;
+color:#B690E8;
+border-bottom: 3px solid #B690E8;
+text-shadow: 0px 0px 18px #7D6AE4;transition: 0.3s;
+}*/
+
+.partners_text{
+  width:50%;
+  text-align: center;
+  font-weight: 500;
+}
+.partner-section{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+  width: 65%;
+  margin-bottom: 5%;
+}
+
+.partner-section a{
+  /*width: 50%;
+  height: 50%;*/
+  /*margin-bottom: 1.5rem;*/
+  /*transition: 0.9s;*/
+}
+
+
+.partner-section img{
+  width: 70%;
+}
+
+/*
+.partner-section img::before{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 
+  filter: grayscale(100%);
+}*/
+
+/* ------------------ MOBILE ------------------ */
+
+@media screen and (min-width: 300px) 
+  and (max-width: 480px){
+
+
+body{
+    background-image: url("../images/fundo-mobile-past.jpg");
+}
+
+
+.past h1, .partners h1, .memories h1{
+  font-size: 2.2rem;
+  margin: 5% auto;
+  width:70%;
+}
+
+#content-gallery{
+  width: 60vw;
+  /*position: relative;*/
+}
+#barra{
+  margin-bottom: 4%;
+}
+.images{
+  margin-top: 30%;
+  left:-8%;
+  transition: 2s;
+  width: 120%;
+}
+.past{
+  padding-top: 44vh;
+  margin-bottom:5vh;
+}
+
+.memories{
+  overflow: visible;
+}
+
+#controls{
+  justify-content: space-between;
+  margin-top: 20%;
+}
+
+.prev, .next{
+  padding: 0vh 10vw;
+}
+
+.partner-section {
+  width: 80%;
+  margin: 2rem 0;
+  text-align: left;
+}
+.partners_text{
+  width:70%;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.partners{
+  margin-top: 30vh;
+  padding-top: 0vh;
+  padding-bottom:0;
+}
+.partner-section a{
+  width: 5rem;
+  height: 4rem;
+  border-radius: 9px;
+  margin-bottom: 0.7rem;
+}
+.content-gallery{
+  width:80vw;
+  height: auto;
+}
+.year{
+  width:70%;
+}
+.year a{
+  font-size: 1.1rem;
+  padding: 0vh 12vw;
+  margin: 5%;
+}
+
+.partner-section img{
+  width: 110%;
+}
+
+}
+/* ------------------ IPAD ------------------ */
+@media screen and (min-width: 480px) 
+and (max-width: 1030px){ 
+
+  .lines_background{
+    background-image: url("../images/background_past_mobile.png");
+  }
+  #controls{
+    display: none;
+  }
+  #content-gallery{
+    width: 65vw;
+    position: relative;
+  }
+  .images{
+    position: absolute;
+    left:-5%;
+    transition: 2s;
+    width: 110%;
+  }
+  .past{
+    margin-bottom: 5vh;
+  }
+  .partners{
+    margin-top: 40vh;
+  }
+  .partners_text{
+    font-size: 1.1em;
+  }
+  .partner-section a{
+    width: 8rem;
+    height: 5rem;
+    border-radius: 9px;
+    margin-bottom: 0.7rem;
+  }
+
+}
