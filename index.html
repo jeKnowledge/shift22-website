@@ -69,10 +69,9 @@
       </div>-->
 
       <div id="scene" class="hero">
-        <img data-depth="0.5" src="images/Tigre 1 1.png" id="tiger1" alt="tigre">
-        <img data-depth="0.5" src="images/Tigre 2 1.png" id="tiger2" alt="tigre">
-        <img data-depth="0.5" src="images/Tigre 3 1.png" id="tiger3" alt="tigre">
-      
+        <img src="images/Tigre 1 1.png" id="tiger1" alt="tigre">
+        <img src="images/Tigre 2 1.png" id="tiger2" alt="tigre">
+        <img src="images/Tigre 3 1.png" id="tiger3" alt="tigre">
       </div>
       
       <div id="titles">
@@ -255,18 +254,22 @@
 <script>
   //animação tigre
   
-  var scene = document.getElementById('scene');
-  var parallaxInstance = new Parallax(scene);
-  /*$("#tiger")
-    .mouseover(function () {
-      $("#tiger").css('z-index', 2);
-      $("#tiger").css('opacity', 1);
-    })
-    .mouseout(function () {
-      $("#tiger").css('z-index', 0);
-      $("#tiger").css('opacity', 0.6);
+  /*var scene = document.getElementById('scene');
+  var parallaxInstance = new Parallax(scene);*/
 
-    });*/
+  window.addEventListener("mousemove", e =>{
+    let x = e.clientX - screen.width/2;
+    let y = e.clientY - screen.height/2;
+
+    const tig1 = document.querySelector("#tiger1");
+    const tig2 = document.querySelector("#tiger2");
+    const tig3 = document.querySelector("#tiger3");
+
+    tig1.style.transform = `translate(${x * 0.08}px, ${y * 0.08}px)`;
+    tig2.style.transform = `translate(${x * 0.06}px, ${y * 0.06}px)`;
+    tig3.style.transform = `translate(${x * 0.04}px, ${y * 0.04}px)`;
+  });
+
 
     //botão newsletter
     var txt= document.getElementById("txt_newsletter");
