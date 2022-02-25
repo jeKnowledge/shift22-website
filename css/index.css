@@ -390,6 +390,41 @@ body{
   min-width: 80vw;
   margin:auto;
 }
+
+#tiger1 {
+  position: absolute;
+  /*left: 26% !important;
+  /* top:-6% !important; */
+  top: 23%;
+  opacity: 0.9;
+  transition: 0.5s;
+  width: 54vw;
+}
+
+#tiger2 {
+  position: absolute;
+  /*margin-top: 6.5%;
+  margin-left: 36.5% !important;*/
+  /* top:-6% !important; */
+  top: 24.5%;
+  opacity: 0.7;
+  transition: 0.5s;
+  width: 49vw;
+}
+
+#tiger3{
+  position: absolute;
+  /*margin-top: 7.5%;
+  margin-left: 38% !important;*/
+  /*left: 26% !important;
+  /* top:-6% !important; */
+  top: 26%;
+  opacity: 0.5;
+  transition: 0.5s;
+  width: 43vw;
+}
+
+/*
 #tiger1 {
   margin-top: 25%;
   left: 1% !important;
@@ -399,7 +434,7 @@ body{
   margin-top: 25%;
   left: 0% !important;
   width: 100vw;
-}
+}*/
 
 .whole{
   min-height: 100vh;

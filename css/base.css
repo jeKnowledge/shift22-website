@@ -172,6 +172,10 @@ footer{
   align-items: flex-end;
 }
 
+.footer-mobile-div{
+  display: none;
+}
+
 .contact , .social , .made{
   display: flex;
   flex-direction: column;
@@ -346,15 +350,48 @@ footer{
 
     footer{
       background-image: url("../images/footer_mobile.png");
-      padding: 0 0 0 0;
+      object-fit: cover;
+      padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      height: 60vh;
     }
 
     .footer-div{
+      display: none;
+    }
+
+    .footer-mobile-div{
+      object-fit: cover;
       display: flex;
       flex-direction: column;
-      padding: 10% ;
-      font-size: 0.7rem;
-      align-items: center;
+      padding-top: 38%;
+      box-sizing: border-box;
+      justify-content: center;
+    }
+
+    .mobile-social_img{
+      display: flex;
+      justify-content: center;
+      width: 100vw;
+      margin-bottom: 6%;
+    }
+
+    .mobile-social_img a{
+      margin-left: 7%;
+      margin-right: 7%;
+    }
+
+    /*.mobile-social_img img{
+      position: absolute;
+      bottom: 10%;
+    }*/
+
+    .mobile-contact-made{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 5%;
     }
 
     .contact , .social , .made{
@@ -369,6 +406,9 @@ footer{
       margin-top: 4vh;
 
     }
+
+    
+    
     .made{
       order:3;
       margin-top: 4vh;
@@ -379,35 +419,39 @@ footer{
     .made img:nth-child(1){
       padding-right: 2%;
     }
-    .made_img{
+    /*.made_img{
       display: flex;
       justify-content: center;
       align-items: center;
-    }
+    }*/
     .made_img img{
+      height: 7.5vh;
       width: 15vw;
     }
 
-    .social_img{
+    /*.social_img{
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 70%;
       flex-wrap: wrap;
-    }
+    }*/
  
     .contact{
-      text-align: center;
-      font-size: 1.3em;
+      margin-left: 5%;
+      font-size: 1.0em;
+    }
+
+    .made{
+      margin-right: 5%;
+      text-align: right;
     }
 
     footer .social_text{
       display: none;
     }
     .made p {
-      text-align: center;
-      font-size: 1.3em;
-
+      font-size: 0.8em;
     }
 
 }
