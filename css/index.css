@@ -104,13 +104,6 @@ body{
   flex-direction: column;
 }
 
-.whole {
-  min-height: 85vh;
-}
-
-.half {
-  min-height: 50vh;
-}
 
 .faq{
   display: flex;
@@ -225,7 +218,7 @@ body{
 .cont_faq{
   padding: 4%;
   background: rgba(255, 255, 255, 0.1);
-  border: 2px solid #DFC6FF;
+  border: 1px solid #DFC6FF;
   box-sizing: border-box;
   border-radius: 8px;
   margin-bottom: 4%;
@@ -266,7 +259,7 @@ body{
 
 .cont #button{
   background-image: linear-gradient(90deg, #7F45F9 , #2131C3 , #AB00E7 , #FFB26A );
-  border: 2px solid #DFC6FF;
+  border: 1px solid #DFC6FF;
   /*box-sizing: border-box;*/
   border-radius: 10px;
   /*text-align: right;*/
@@ -327,7 +320,7 @@ body{
   font-size: 0.9rem;
   padding: 0 2vw;
   width:34vw;
-  border: 2px solid #DFC6FF;
+  border: 1px solid #DFC6FF;
   box-sizing: border-box;
 }
 
@@ -342,7 +335,7 @@ body{
   height: 7vh;
   padding: 0 3vw;
   margin-right: 0;
-  border: 2px solid #DFC6FF;
+  border: 1px solid #DFC6FF;
   box-sizing: border-box;
   transition: 0.5s background-position;
   background-size: 300%;
@@ -434,7 +427,7 @@ body{
 }
 
 .whole{
-  min-height: 100vh;
+  min-height: 30vh;
 }
 
 .half{
@@ -458,7 +451,8 @@ body{
 }
 .cont h1{
   font-size: 1.9em;
-  margin-bottom: 25%;
+  margin-bottom: 3%;
+  margin-top: 65%;
 }
 .content-text h2{
   font-size: 1.3em;

@@ -317,6 +317,7 @@ footer{
     left:0;
     height: 100vh;
     text-align: center;
+    background-repeat: round;
   }
   
   #menu a{
@@ -372,21 +373,22 @@ footer{
 
     .mobile-social_img{
       position: relative;
+      padding-top: 20%;
       display: flex;
       justify-content: center;
       width: 100vw;
-      margin-bottom: 6%;
+      /*margin-bottom: 3%;*/
+    }
+
+    #shift_icon{
+      position: absolute;
+      top:0;
     }
 
     .mobile-social_img a{
       margin-top: 10%;
       margin-left: 7%;
       margin-right: 7%;
-    }
-
-    .mobile-social_img img{
-      position: absolute;
-      bottom: 30%;
     }
 
     .mobile-contact-made{
