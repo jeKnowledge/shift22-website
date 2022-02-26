@@ -424,17 +424,14 @@ body{
   width: 43vw;
 }
 
-/*
-#tiger1 {
-  margin-top: 25%;
-  left: 1% !important;
-  width: 100vw;
+#titles h1{
+  font-size: 1.7rem;
+  margin-bottom: 7%;
 }
-#tiger2 {
-  margin-top: 25%;
-  left: 0% !important;
-  width: 100vw;
-}*/
+
+#titles h3{
+  font-size: 1.1rem;
+}
 
 .whole{
   min-height: 100vh;
@@ -539,6 +536,7 @@ width:40vw;
 }
 
 /* ------------------ IPAD ------------------ */
+/*
 @media screen and (min-width: 600px)and (max-width: 1030px){ 
 
  .bubbles_background {

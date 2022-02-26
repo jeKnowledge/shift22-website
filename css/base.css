@@ -331,10 +331,10 @@ footer{
   #menu_nav a{
     display: block;
     color:white;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-family: Poppins;
     font-weight: 700;
-    padding-bottom: 15%;
+    padding-bottom: 30%;
   }
 
   #menu a:nth-child(2) {
@@ -371,6 +371,7 @@ footer{
     }
 
     .mobile-social_img{
+      position: relative;
       display: flex;
       justify-content: center;
       width: 100vw;
@@ -378,14 +379,15 @@ footer{
     }
 
     .mobile-social_img a{
+      margin-top: 10%;
       margin-left: 7%;
       margin-right: 7%;
     }
 
-    /*.mobile-social_img img{
+    .mobile-social_img img{
       position: absolute;
-      bottom: 10%;
-    }*/
+      bottom: 30%;
+    }
 
     .mobile-contact-made{
       display: flex;
@@ -457,6 +459,7 @@ footer{
 }
 
 /* ------------------ IPAD ------------------ */
+/*
 @media screen and (min-width: 480px) 
 and (max-width: 1030px){ 
 
