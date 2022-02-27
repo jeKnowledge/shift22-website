@@ -355,7 +355,6 @@ footer{
       background-size: cover;
       padding-top: 0;
       padding-left: 0;
-      padding-right: 0;
       height: 60vh;
     }
 
@@ -374,7 +373,7 @@ footer{
 
     .mobile-social_img{
       position: relative;
-      padding-top: 20%;
+      padding-top: 18%;
       display: flex;
       justify-content: center;
       width: 100vw;
