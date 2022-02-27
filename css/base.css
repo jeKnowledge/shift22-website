@@ -106,7 +106,7 @@ li{
   display: flex;
   justify-content: space-between;
   /*align-items: right;*/
-  justify-content: right;
+  justify-content: flex-end;
 }
 #menu_nav{
   display: flex;
@@ -352,6 +352,7 @@ footer{
     footer{
       background-image: url("../images/footer_mobile.png");
       object-fit: cover;
+      background-size: cover;
       padding-top: 0;
       padding-left: 0;
       padding-right: 0;

@@ -116,10 +116,10 @@ body{
   .cont_faq{
 border-width:2px;
   }
-  .cont_faq:hover{
+  /*.cont_faq:hover{
     border: double 2px transparent;
 
-  }
+  }*/
 
 }
 /* ------------------ IPAD ------------------ */
