@@ -117,8 +117,9 @@ body{
 .content-prizes{
   width:45vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 10%;
+  grid-template-columns: 2fr 2.5fr 1.5fr;
+  height: 70vh;
+  /*margin-top: 10%;*/
 }
 
 .cont{
@@ -140,10 +141,36 @@ body{
 }
 .content-prizes img{
   width: 95%;
-  border: 3px solid #fff;
-  border-radius: 8px ;
-  
 }
+
+/*PRIZES*/
+.prize{
+  margin-top: 20%;
+  text-align: center;
+}
+
+.prize h5{
+  margin-bottom: 7%;
+}
+
+.prize p{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/*
+.first{
+  width: 50%;
+}
+*/
+.second{
+  margin-top: 49%;
+}
+
+.third{
+  margin-top: 96%;
+}
+
 
 /* PARTNERS */
 .partners h2{
@@ -438,13 +465,30 @@ body{
   margin-top: 10vh;
 }
 .content-prizes{
-  display: block;
+  display: grid;
   width: 70vw;
+  height: 130vh;
+  grid-template-columns: 1fr;
 }
 .content-prizes img{
   width:80%;
   margin-bottom: 10%;
 }
+
+.first{
+  order: 1;
+}
+
+.second{
+  order: 2;
+  margin-top: 20%;
+}
+
+.third{
+  order: 3;
+  margin-top: 20%;
+}
+
 .partner{
   min-height:60vh;
   margin-top: 20vh;
